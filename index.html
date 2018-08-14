@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <script type="text/javascript">var w = screen.width,
-    h = screen.height;
-
- function changeContent() {
-                var x=document.getElementById('insert').rows[0].cells;
-                x[0].innerHTML="width is " + w + " height is " + h;
-            }
-
-</script>
+    <script type="text/javascript">
+    function changeContent() {
+        var w = screen.width,
+            h = screen.height;
+        var x = document.getElementById('insert').rows[0].cells;
+        x[0].innerHTML = "width is " + w + " height is " + h;
+    }
+    </script>
 </head>
+
 <body>
-    <table id = "insert">
+    <table id="insert">
         <tr>
             <td>ololo</td>
         </tr>
     </table>
     <input type="button" onclick="changeContent()" value="Get New">
-
 </body>
+
 </html>
