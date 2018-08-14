@@ -5,9 +5,21 @@
     <title>Document</title>
     <script type="text/javascript">var w = screen.width,
     h = screen.height;
-alert('width is '+ w + 'x' + h)</script>
+
+ function changeContent() {
+                var x=document.getElementById('insert').rows[0].cells;
+                x[0].innerHTML="width is " + w + " height is " + h;
+            }
+
+</script>
 </head>
 <body>
-    
+    <table id = "insert">
+        <tr>
+            <td>ololo</td>
+        </tr>
+    </table>
+    <input type="button" onclick="changeContent()" value="Get New">
+
 </body>
 </html>
