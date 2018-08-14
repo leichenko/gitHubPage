@@ -11,7 +11,7 @@
             orientation = window.orientation;
             agent = navigator.userAgent;
         var x = document.getElementById('insert').rows[0].cells;
-        x[0].innerHTML = "width is " + w + " height is " + h + " orientation is " + orientation + " agent is " + agent;
+        x[0].innerHTML = "width is " + w +"<br/>"+ " height is " + h  +"<br/>" + " orientation is " + orientation  + "<br/>" + " agent is " + agent;
     }
     </script>
 </head>
@@ -19,7 +19,7 @@
 <body>
     <table id="insert">
         <tr>
-            <td>ololo</td>
+            <td>dfd ololo</td>
         </tr>
     </table>
     <input type="button" onclick="changeContent()" value="Get New">
