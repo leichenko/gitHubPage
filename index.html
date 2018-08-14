@@ -8,8 +8,9 @@
     function changeContent() {
         var w = screen.width,
             h = screen.height;
+            orientation = window.orientation;
         var x = document.getElementById('insert').rows[0].cells;
-        x[0].innerHTML = "width is " + w + " height is " + h;
+        x[0].innerHTML = "width is " + w + " height is " + h + " orientation is " + orientation;
     }
     </script>
 </head>
@@ -17,7 +18,7 @@
 <body>
     <table id="insert">
         <tr>
-            <td>ololo</td>
+            <td>olol</td>
         </tr>
     </table>
     <input type="button" onclick="changeContent()" value="Get New">
