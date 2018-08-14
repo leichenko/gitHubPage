@@ -9,8 +9,9 @@
         var w = screen.width,
             h = screen.height;
             orientation = window.orientation;
+            agent = navigator.userAgent;
         var x = document.getElementById('insert').rows[0].cells;
-        x[0].innerHTML = "width is " + w + " height is " + h + " orientation is " + orientation;
+        x[0].innerHTML = "width is " + w + " height is " + h + " orientation is " + orientation + " agent is " + agent;
     }
     </script>
 </head>
@@ -18,7 +19,7 @@
 <body>
     <table id="insert">
         <tr>
-            <td>olol</td>
+            <td>ololo</td>
         </tr>
     </table>
     <input type="button" onclick="changeContent()" value="Get New">
